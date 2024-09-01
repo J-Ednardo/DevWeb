@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula11</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+            
+            <p>O meu formulario</p>
+            
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </p>
+
+            <p>
+                <label for="dev1">Sou um dev</label>
+                <input type="radio" id="dev1" name="dev1" value="sim">Sim
+                <input type="checkbox" id="dev2" name="dev2" value="não">Não
+            </p>
+            
+            <p>
+                Gênero:<br>
+                <label for="dev1">Feminino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino"><br>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino"><br>
+                <label for="outro">Outro</label>
+                <input type="radio" id="outro" name="genero" value="outro">
+            </p>
+
+            <p>
+                <label for="datatime">Date</label>
+                <input type="datetime-local" id="datatime" name="datatime">
+            </p>
+
+            <p>
+                <label for="time">Date</label>
+                <input type="time" id="time" name="time">
+            </p>
+
+            <p>
+                <label for="cor">Cor preferida</label>
+                <input type="color" id="cor" name="cor">
+            </p>
+
+            <p>
+                <label for="email">Seu email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </p>
+
+            <p>
+                <label for="foto">Sua foto</label>
+                <input type="file" id="foto" name="foto" accept=".png">
+            </p>
+
+            <p>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" min="0" max="130">
+            </p>
+
+            <p>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+            </p>
+
+            <p>
+                <label for="range">range</label>
+                <input type="range" id="range" name="range">
+            </p>
+
+            <p>
+                <label for="url">Sua url</label>
+                <input type="url" id="url" name="url" placeholder="URL">
+            </p>
+            
+            <p>
+                <label for="buscador">Buscador:</label>
+                <input type="search" id="buscador" name="buscador" placeholder="search">
+            </p>
+
+            <p>
+                <label for="selecet">Selecione alguma coisa:</label>
+                <select name="select" id="select">
+                    <option value="Qualquer coisa1">Label1</option>
+                    <option value="Qualquer coisa2">Label2</option>
+                    <option value="Qualquer coisa3">Label3</option>
+                    <option value="Qualquer coisa4">Label4</option>
+                    <option value="Qualquer coisa5">Label5</option>
+                    <option value="Qualquer coisa6">Label6</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="textarea">Textarea:</label>
+                <textarea name="textarea" id="textarea"></textarea>
+            </p>
+
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button>
+            </p>
+
+        </form>
+</body>
+</html>
