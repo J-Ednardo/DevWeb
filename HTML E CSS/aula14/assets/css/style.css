@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.heading {
+    transition: all 200ms ease-in-out;
+}
+
+.heading:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: darkorange;
+}
+
+a:link {
+    color: darkturquoise;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    background: darkorchid;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background: darkgreen;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: red;
+    cursor: not-allowed;
+}

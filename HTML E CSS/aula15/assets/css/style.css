@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p:not(.meio){
+    color: blue;
+}
+
+input:not(:checked) + p {
+    background-color: yellow;
+}
+
