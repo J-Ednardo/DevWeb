@@ -19,5 +19,3 @@ arredodnaC.innerHTML = arredondadoParaCima
 const casasdecimais = document.getElementById("casas")
 let comDuasCasasDecimais = Number(num).toFixed(2)
 casasdecimais.innerHTML = comDuasCasasDecimais
-
-
