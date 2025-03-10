@@ -11,4 +11,3 @@ console.log(corPadrao)
 }else {
     console.log("Usuario Normal")
 }*/
-
