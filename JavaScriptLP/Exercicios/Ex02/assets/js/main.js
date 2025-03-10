@@ -95,3 +95,14 @@ function createsDate(date) {
 const horario = document.getElementById("horario")
 const data = new Date()
 horario.innerHTML = createsDate(data)
+
+/* 
+const h1 = documento.getElementById("horario")
+const data = new Date()
+const opcoes = {
+    dateStyle: 'full',
+    timeStyle: 'short',
+}
+
+h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes)
+*/
