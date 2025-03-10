@@ -1,4 +1,4 @@
-function getDayWeekText (dayWeek) {
+function getDayWeekText(dayWeek) {
     let dayWeekText
 
     switch (dayWeek) {
@@ -13,7 +13,7 @@ function getDayWeekText (dayWeek) {
             return dayWeekText
         case 3:
             dayWeekText = 'quarta-feira'
-            return dayWeekText  
+            return dayWeekText
         case 4:
             dayWeekText = 'quinta-feira'
             return dayWeekText
@@ -29,7 +29,7 @@ function getDayWeekText (dayWeek) {
     }
 }
 
-function getMonthText (month) {
+function getMonthText(month) {
     let monthText
 
     switch (month) {
@@ -75,14 +75,19 @@ function getMonthText (month) {
     }
 }
 
+function createsDate(date) {
+    const dayWeek = data.getDay()
+    const dayWeekText = getDayWeekText(dayWeek)
+    const numDay = data.getDate()
+    const numMonth = data.getMonth()
+    const monthText = getMonthText(numMonth)
+    const year = data.getFullYear()
+    const hour = data.getHours()
+    const minutes = data.getMinutes()
+
+    return `${dayWeekText}, ${numDay} de ${monthText} de ${year} ${hour}:${minutes}`
+}
+
 const horario = document.getElementById("horario")
 const data = new Date()
-const dayWeek = data.getDay()
-const dayWeekText = getDayWeekText(dayWeek)
-const numDay = data.getDate()
-const numMonth = data.getMonth()
-const monthText = getMonthText(numMonth)
-const year = data.getFullYear()
-const hour = data.getHours()
-const minutes = data.getMinutes()
-horario.innerHTML = `${dayWeekText}, ${numDay} de ${monthText} de ${year} ${hour}:${minutes}`
+horario.innerHTML = createsDate(data)
