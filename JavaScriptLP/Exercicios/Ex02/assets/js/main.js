@@ -75,17 +75,21 @@ function getMonthText(month) {
     }
 }
 
-function createsDate(date) {
-    const dayWeek = data.getDay()
-    const dayWeekText = getDayWeekText(dayWeek)
-    const numDay = data.getDate()
-    const numMonth = data.getMonth()
-    const monthText = getMonthText(numMonth)
-    const year = data.getFullYear()
-    const hour = data.getHours()
-    const minutes = data.getMinutes()
+function zeroLeft (num) {
+    return num >= 10 ? num : `0${num}`
+}
 
-    return `${dayWeekText}, ${numDay} de ${monthText} de ${year} ${hour}:${minutes}`
+function createsDate(date) {
+    const dayWeek = date.getDay()
+    const dayWeekText = getDayWeekText(dayWeek)
+    const numDay = date.getDate()
+    const numMonth = date.getMonth()
+    const monthText = getMonthText(numMonth)
+    const year = date.getFullYear()
+    const hour = date.getHours()
+    const minutes = date.getMinutes()
+
+    return `${dayWeekText}, ${numDay} de ${monthText} de ${year} ${zeroLeft(hour)}:${zeroLeft(minutes)}`
 }
 
 const horario = document.getElementById("horario")
