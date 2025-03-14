@@ -1,5 +1,5 @@
 // Global
-//Closures: habilidade que a funcao tem de acessar seu excopo lexico
+//Closures: habilidade que a funcao tem de acessar seu excopo
 function retornaFuncao (nome) {
     return function () {
         return nome
