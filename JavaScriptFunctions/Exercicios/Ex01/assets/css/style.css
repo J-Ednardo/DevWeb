@@ -56,3 +56,44 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+
+
+.visor {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
+
+.btn-eq {
+  background-color: rgb(17, 86, 102);
+}
+
+.btn-eq:hover {
+  background: rgb(8, 58, 70);
+}
