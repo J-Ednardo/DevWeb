@@ -1,6 +1,6 @@
 // Exercicio 01, mas utilizando uma funcao contrutora
 function Calculadora() {
-    this.display = document.querySelector('.visor')
+    this.display = document.querySelector('.visor');
     
     this.inicia = () => {
         this.cliqueBotoes();
